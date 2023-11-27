@@ -1,0 +1,22 @@
+
+.navbar-container {
+  background-color: #3498db;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}

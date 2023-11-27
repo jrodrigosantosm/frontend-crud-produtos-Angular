@@ -1,0 +1,16 @@
+<div class="product-list-container">
+  <div class="product-header">
+    <h2>Lista de Produtos</h2>
+  </div>
+
+  <div *ngFor="let produto of produtoslista" class="product-item">
+    <h2>{{ produto.nome }}</h2>
+    <p>Categoria: {{ produto.categoria }}</p>
+    <p>Valor: {{ produto.valor }}</p>
+    <p>Data de Vencimento: {{ produto.dataVencimento }}</p>
+    <p>Estoque: {{ produto.estoque }}</p>
+    <p>Perecível: {{ produto.perecivel ? 'Sim' : 'Não' }}</p>
+
+
+</div>
+</div>

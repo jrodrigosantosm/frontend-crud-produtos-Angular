@@ -1,0 +1,38 @@
+<div class="form-container">
+  <h2 class="form-title">Adicionar Novo Produto</h2>
+  <form method="post" (submit)="adicionarProduto()">
+    <div class="form-field">
+      <label for="nome" class="form-label">Nome:</label>
+      <input [(ngModel)]="novoProduto.nome" type="text" id="nome" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="categoria" class="form-label">Categoria:</label>
+      <input [(ngModel)]="novoProduto.categoria" type="text" id="categoria" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="valor" class="form-label">Valor:</label>
+      <input  [(ngModel)]="novoProduto.valor" type="number" id="valor" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="dataVencimento" class="form-label">Data de Vencimento:</label>
+      <input [(ngModel)]="novoProduto.dataVencimento" type="date" id="dataVencimento" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="estoque" class="form-label">Estoque:</label>
+      <input  [(ngModel)]="novoProduto.estoque" type="number" id="estoque" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="perecivel" class="form-label">Perecível:</label>
+      <input [(ngModel)]="novoProduto.perecivel" type="checkbox" id="perecivel" class="form-input" />
+    </div>
+
+    <button type="submit" class="form-button">Adicionar Produto</button>
+  </form>
+</div>
+
+
